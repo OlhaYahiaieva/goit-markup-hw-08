@@ -1,0 +1,28 @@
+.generel {
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/generel.jpg");
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0px;
+}
+
+.titel-generel {
+  color: $primary-wight-color;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+}
+.button.primery {
+  background-color: $accent-color;
+  color: $primary-wight-color;
+  padding: 6px 22px;
+}

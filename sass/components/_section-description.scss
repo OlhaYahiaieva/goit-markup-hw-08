@@ -1,0 +1,39 @@
+.description {
+  padding-top: 94px;
+}
+.description-titel {
+  @extend %text-styles;
+}
+.description-item p {
+  width: 270px;
+  height: 75px;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.description-item:not(:last-child) {
+  margin-right: 30px;
+}
+.description-item::before {
+  display: block;
+  content: "";
+  background-color: rgba(245, 244, 250, 1);
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url("../../images/svg/antenna\ 1.png");
+}
+.icon-clock::before {
+  background-image: url("../../images/svg/clock\ 1.png");
+}
+.icon-diagram::before {
+  background-image: url("../../images/svg/diagram\ 1.png");
+}
+.icon-astronaut::before {
+  background-image: url("../../images/svg/astronaut\ 1.png");
+}

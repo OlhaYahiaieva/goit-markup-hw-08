@@ -1,0 +1,40 @@
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+.actions li:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-button {
+  display: block;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-wight-color;
+  }
+}
+
+.icon-social {
+  fill: $piimary-icon-color;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-social-footer {
+  fill: $primary-wight-color;
+}
+.icon-button-footer {
+  background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,139 @@
+textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+}
+.form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $primary-wight-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0px 40px 0px 40px;
+}
+.form-titil {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: $titel-text-color;
+}
+.form-fild {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-input:focus-within > .form-svg {
+  border: 11px solid $accent-color;
+}
+.form-label {
+  margin-bottom: 4px;
+}
+.form-input {
+  margin: 0;
+  padding: 12px 0px 12px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:focus + .form-svg {
+    fill: $accent-color;
+  }
+}
+.form-checkbox {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.checkbox {
+  -webkin-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  background: $primary-wight-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon {
+  background: $accent-color;
+  background-image: url("../../images/svg/check-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+.form-textarea {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  outline: none;
+}
+.form-textarea:focus {
+  border-color: $accent-color;
+}
+.form-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+.form-svg {
+  position: absolute;
+  top: 55%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+}
+
+.button-submit {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: $primary-wight-color;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.btn-submit {
+  display: flex;
+  justify-content: center;
+}
+.link-form {
+  display: flex;
+  color: $accent-color;
+}

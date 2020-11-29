@@ -1,0 +1,52 @@
+.address-page {
+  // @media (max-width: 768px) {
+  //   display: none;
+  // }
+}
+.addres {
+  color: $primary-text-color;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.icon-anvelope {
+  // display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.icon-envelope {
+  margin-right: 10px;
+  fill: $primary-text-color;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+.icon-smartphone {
+  // display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.icon-smartphon {
+  margin-right: 10px;
+  fill: $primary-text-color;
+}
+.wtapper-address a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wtapper-address:hover a {
+  color: $accent-color;
+}
+.wtapper-address:hover svg {
+  fill: $accent-color;
+}
+.address {
+  color: $primary-wight-color;
+  font-style: normal;
+  margin-top: 20px;
+}
+.page-footer .addres {
+  margin-top: 9px;
+}

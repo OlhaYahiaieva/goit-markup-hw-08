@@ -1,0 +1,44 @@
+.clients {
+  @extend %section-indent;
+}
+.titel-clients {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.list-clients {
+  display: flex;
+  justify-content: center;
+}
+.list-clients li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.svg-clients {
+  fill: #afb1b8;
+}
+.list-clients li {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: #2196f3;
+  }
+}
